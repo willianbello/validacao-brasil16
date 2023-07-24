@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormGroup, FormBuilder } from '@angular/forms';
+
 import { ValidacaoBrasil } from 'projects/validacao-brasil/src/public-api';
 
 @Component({
@@ -22,11 +23,7 @@ export class AppComponent {
 
   formLoad() {
     this.form = this.fb.group({
-      cpf: ['', ValidacaoBrasil.cpf()],
-      cnpj: ['', ValidacaoBrasil.cnpj()],
-      cep: ['', ValidacaoBrasil.cep()],
-      telefone: ['', ValidacaoBrasil.telefone(false)],
-      celular: ['', ValidacaoBrasil.celular(true, true, false)]
+      cpf: ['', [ValidacaoBrasil.cpf(true)]],
     })
   }
 }

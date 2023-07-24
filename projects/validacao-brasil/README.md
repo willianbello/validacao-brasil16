@@ -10,7 +10,7 @@ Suporte para o Angular 12, 13, 14, 15 e 16
 | 13  | 13.3.0  |
 | 14  | 14.2.1  |
 | 15  | 15.2.0  |
-| 16  | 16.1.0  |
+| 16  | 16.1.4  |
 
 
 Este projeto foi testado somente com Angular 12, 13, 14, 15 e 16 puro, mas não tem nenhuma dependência fora do próprio framework,
