@@ -103,23 +103,17 @@ o ddd tem 3 dígitos?
 
     celular: ['', ValidacaoBrasil.celular(true, true, true)]
 
-<div>
-    <div>
-          cpf: 48103288055 | {{ '48103288055' | cpf }}
-          cnpj: 76601670000125 | {{ '76601670000125' | cnpj }}
-          cep: 77064202 | {{ '77064202' | cep }}
-    </div>
-    <div>
-          telefone: 5131234567 | {{ '5131234567' | telefone }}
-          telefone: 05131234567 | {{ '05131234567' | telefone:true:true }}
-          telefone: 31234567 | {{ '31234567' | telefone:false }}
-    </div>
-    <div>
-          celular: 51991234567 | {{ '51991234567' | celular }}
-          celular: 051991234567 | {{ '051991234567' | celular:true:true }}
-          celular: 991234567 | {{ '991234567' | celular:false }}
-    </div>
-  </div>
+    cpf: 48103288055 | {{ '48103288055' | cpf }}
+    cnpj: 76601670000125 | {{ '76601670000125' | cnpj }}
+    cep: 77064202 | {{ '77064202' | cep }}
+    
+    telefone: 5131234567 | {{ '5131234567' | telefone }}
+    telefone: 05131234567 | {{ '05131234567' | telefone:true:true }}
+    telefone: 31234567 | {{ '31234567' | telefone:false }}
+    
+    celular: 51991234567 | {{ '51991234567' | celular }}
+    celular: 051991234567 | {{ '051991234567' | celular:true:true }}
+    celular: 991234567 | {{ '991234567' | celular:false }}
   
       <div>
           <p>Celular</p>
