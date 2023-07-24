@@ -13,7 +13,7 @@ Suporte para o Angular 12, 13, 14, 15 e 16
 | 16  | 16.1.0  |
 
 
-Este projeto foi testado somente com Angular 12, 13, 14 e 15 puro, mas não tem nenhuma dependência fora do próprio framework,
+Este projeto foi testado somente com Angular 12, 13, 14, 15 e 16 puro, mas não tem nenhuma dependência fora do próprio framework,
 todo o código foi criado com Typescript e Javascript puro para evitar outras dependências.
 
 Atualmente tem as seguintes opções:
