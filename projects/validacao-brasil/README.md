@@ -84,11 +84,11 @@ se for "required" e houver erro ira retorna um objeto { required: true }.
 para as outras validações será enviado um objeto com o nome da validação.
 Exemplo:
 
-cpf => { cpf: true }
-cnpj => { cnpj: true }
-cep => { cep: true }
-telefone => { telefone: true }
-celular => { celular: true }
+    cpf => { cpf: true }
+    cnpj => { cnpj: true }
+    cep => { cep: true }
+    telefone => { telefone: true }
+    celular => { celular: true }
 
 OBS: para o celular há uma validação adicional que é a verificação de começar com 9
 será enviado o objeto: *{ nove: true }* quando ele não começar com 9.
