@@ -23,7 +23,11 @@ export class AppComponent {
 
   formLoad() {
     this.form = this.fb.group({
-      cpf: ['', [ValidacaoBrasil.cpf(true)]],
+      cpf: ['', ValidacaoBrasil.cpf()],
+      // cnpj: ['', ValidacaoBrasil.cnpj()],
+      // cep: ['', ValidacaoBrasil.cep()],
+      // telefone: ['', ValidacaoBrasil.telefone(false)],
+      celular: ['', ValidacaoBrasil.celular(true)]
     })
   }
 }
