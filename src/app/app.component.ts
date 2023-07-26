@@ -11,6 +11,8 @@ import { ValidacaoBrasil } from 'projects/validacao-brasil/src/public-api';
 export class AppComponent {
   title = 'validacao-brasil16';
 
+  dataMin = '26/07/2023';
+  dataMax = '26/07/2028';
   form: FormGroup = new FormGroup([]);
 
   constructor(
@@ -24,9 +26,13 @@ export class AppComponent {
   formLoad() {
     this.form = this.fb.group({
       cpf: ['', ValidacaoBrasil.cpf()],
-      // cnpj: ['', ValidacaoBrasil.cnpj()],
-      // cep: ['', ValidacaoBrasil.cep()],
-      // telefone: ['', ValidacaoBrasil.telefone(false)],
+      soNumeros: [''],
+      soLetrasComEspaco: [''],
+      data: ['', ValidacaoBrasil.data(true, true, this.dataMin, this.dataMax)],
+      titulo: ['', ValidacaoBrasil.tituloEleitor(false)],
+      cnpj: ['', ValidacaoBrasil.cnpj()],
+      cep: ['', ValidacaoBrasil.cep()],
+      telefone: ['', ValidacaoBrasil.telefone(false)],
       celular: ['', ValidacaoBrasil.celular(true)]
     })
   }
