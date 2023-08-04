@@ -18,7 +18,8 @@ todo o código foi criado com Typescript e Javascript puro para evitar outras de
 
 Atualmente tem as seguintes opções:
 
-### Validações:
+### Validações
+
 CPF
 CNPJ
 CEP
@@ -27,14 +28,16 @@ Celular
 Titulo Eleitor
 Data
 
-### Pipes:
+### Pipes
+
 CPF
 CNPJ
 CEP
 Telefone
 Celular
 
-### Diretivas:
+### Diretivas
+
 CPF
 CNPJ
 CEP
@@ -50,6 +53,7 @@ bSoLetrasComEspaco  => bSoLetrasComEspaco
 diretivas de só numero ou só letra não permitem que seja digitado no input qualquer valor que não seja numero ou letra.
 
 ## Importação
+
     import { NgModule } from '@angular/core';
     import { BrowserModule } from '@angular/platform-browser';
     
